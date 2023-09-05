@@ -40,3 +40,6 @@ export default class {
     });
   }
 }
+window.onbeforeunload = function (event) {
+  putDb(localStorage.getItem('content'));
+};
